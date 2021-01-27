@@ -9,9 +9,6 @@ namespace Ex07_ThreadPool
         {
             ThreadPool.QueueUserWorkItem(MyTask);
 
-            var t = new Thread(MyTask);
-            t.Start();
-
             for (int i = 0; i < 500; i++)
             {
                 Console.Write(".");
