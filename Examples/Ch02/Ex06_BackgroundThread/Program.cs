@@ -7,8 +7,12 @@ namespace Ex06_BackgroundThread
         private static void Main(string[] args)
         {
             Thread t = new Thread(MyTask);
-            t.IsBackground = true;
+            //t.IsBackground = true;
             t.Start();
+
+            var r = t.Join(2000);
+
+            System.Console.WriteLine("r is {0}", r);
 
             // 若 t 是前景執行緒，此應用程式不會結束，除非手動將它關閉;
             // 若 t 是背景執行緒，此應用程式會立刻結束。
