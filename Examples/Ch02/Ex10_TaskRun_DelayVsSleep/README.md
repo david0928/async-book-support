@@ -2,10 +2,10 @@
 
 使用 Task.Run 時，比較 Task.Delay 和 Thread.Sleep 的效能差異。
 
-- Thread.Sleep: Block 目前的 Thread。
-- Task.Delay: 另外開啟一個非同步來等待，而不是 Block 目前的 Thread。
+- Thread.Sleep: Block 目前的 Thread，目前的程式區域裡會變成同步執行。
+- Task.Delay: 遇到 await 時會將目前的 Thread 還給 Thread Pool，另外開啟一個非同步來等待，等待完成後重新從 Thread Pool 取得 Thread，而不是 Block 目前的 Thread。
 
-在 執行緒數量 > CPU 核心數時，使用 Thread.Sleep 造成 Block 後，會有 Context Switch 的問題，所以 Task.Delay 的效能會比較好。
+使用 Thread.Sleep 造成 Block 後，會有 Context Switch 的問題(執行緒數量 > CPU 核心數時，更容易發生)，所以 Task.Delay 的效能會比較好。
 
 - [When to use Task.Delay, when to use Thread.Sleep?](https://stackoverflow.com/questions/20082221/when-to-use-task-delay-when-to-use-thread-sleep)
 - [Thread.Sleep 與 Task.Delay 是完全不一樣的東西](http://slashview.com/archive2016/20160201.html)
