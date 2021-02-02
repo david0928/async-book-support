@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex10_Task", "Ex10_Task\Ex10
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex10_TaskRun", "Ex10_TaskRun\Ex10_TaskRun.csproj", "{F946D020-0158-4969-92EE-6E61B2987AA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex03_02_ThreadJoinTimeout", "Ex03_02_ThreadJoinTimeout\Ex03_02_ThreadJoinTimeout.csproj", "{0DABBBCC-C88A-4D8C-9790-12C87E8DA743}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex03_02_ThreadJoinTimeout", "Ex03_02_ThreadJoinTimeout\Ex03_02_ThreadJoinTimeout.csproj", "{0DABBBCC-C88A-4D8C-9790-12C87E8DA743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10_TaskRun_DelayVsSleep", "Ex10_TaskRun_DelayVsSleep\Ex10_TaskRun_DelayVsSleep.csproj", "{CF5E9264-A222-4138-895D-7FE0151B9546}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{0DABBBCC-C88A-4D8C-9790-12C87E8DA743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DABBBCC-C88A-4D8C-9790-12C87E8DA743}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DABBBCC-C88A-4D8C-9790-12C87E8DA743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF5E9264-A222-4138-895D-7FE0151B9546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF5E9264-A222-4138-895D-7FE0151B9546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF5E9264-A222-4138-895D-7FE0151B9546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF5E9264-A222-4138-895D-7FE0151B9546}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
