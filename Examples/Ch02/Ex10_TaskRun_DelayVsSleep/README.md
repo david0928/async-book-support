@@ -12,4 +12,5 @@
 - [用.NET展現多核威力(1) - 從 ThreadPool 翻船談起](https://blog.darkthread.net/blog/multicore-1/)
 - [用.NET展現多核威力(2) - 一核一緒 王者之道?](https://blog.darkthread.net/blog/multicore-2/)
 - [用.NET展現多核威力(2A) - 一核一緒補充包](https://blog.darkthread.net/blog/multicore-2a/)
-- [用.NET展現多核威力(3) – 佛心 TPL 之 Parallel.For 好威](https://blog.darkthread.net/blog/multicore-3/)
+- [用.NET展現多核威力(3) - 佛心 TPL 之 Parallel.For 好威](https://blog.darkthread.net/blog/multicore-3/)
+- [Parallel.For 翻船事件剖析 - 使用 Concurrency Visualizer](https://blog.darkthread.net/blog/concurrency-visualizer/)
