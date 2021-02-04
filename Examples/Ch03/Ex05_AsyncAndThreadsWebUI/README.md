@@ -39,6 +39,7 @@ Thread 切換的部分，測試的結果，以下前 四種情境 都有可能�
 3. Thread 2 -> 使用 Task.FromResult() or Task.Run() 模擬 await 期間的 Thread ID
 4. Thread 2 -> webClient.DownloadStringTaskAsync() 完成後
 
+參考:
 - [使用 .NET Async/Await 的常見錯誤](https://blog.darkthread.net/blog/common-async-await-mistakes)
 - [There Is No Thread](https://blog.stephencleary.com/2013/11/there-is-no-thread.html)
 - [Correcting Common Async/Await Mistakes in .NET - 影片](https://www.youtube.com/watch?v=J0mcYVxJEl0)
