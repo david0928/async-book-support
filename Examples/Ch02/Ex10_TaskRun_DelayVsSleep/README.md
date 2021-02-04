@@ -7,6 +7,7 @@
 
 使用 Thread.Sleep 造成 Block 後，會有 Context Switch 的問題(執行緒數量 > CPU 核心數時，更容易發生)，所以 Task.Delay 的效能會比較好。
 
+- [Task.Delay](https://docs.microsoft.com/zh-tw/dotnet/api/system.threading.tasks.task.delay)
 - [When to use Task.Delay, when to use Thread.Sleep?](https://stackoverflow.com/questions/20082221/when-to-use-task-delay-when-to-use-thread-sleep)
 - [Thread.Sleep 與 Task.Delay 是完全不一樣的東西](http://slashview.com/archive2016/20160201.html)
 - [用.NET展現多核威力(1) - 從 ThreadPool 翻船談起](https://blog.darkthread.net/blog/multicore-1/)
