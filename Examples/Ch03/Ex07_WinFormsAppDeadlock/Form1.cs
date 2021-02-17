@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,6 +23,7 @@ namespace Ex06_WinFormsAppDeadlock
         private async Task<string> GetStringAsync()
         {
             return await _httpClient.GetStringAsync("https://www.google.com");
+            // return await _httpClient.GetStringAsync("https://www.google.com").ConfigureAwait(false); // OK
         }
 
         private async void btnSolution1_Click(object sender, EventArgs e)

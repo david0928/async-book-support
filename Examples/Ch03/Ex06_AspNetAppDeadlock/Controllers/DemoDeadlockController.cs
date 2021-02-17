@@ -6,10 +6,21 @@ namespace Ex06_AspNetAppDeadlock.Controllers
 {
     public class DemoDeadlockController : ApiController
     {
+
+        // /api/DownloadPageLock
         // 
-        // /api/DemoDeadlock/DownloadPage
         [HttpGet]
-        public async Task <HttpResponseMessage> DownloadPage()
+        public HttpResponseMessage DownloadPageLock()
+        {
+            var task = MyDownloadPageAsync("https://www.huanlintalk.com");
+            var content = task.Result;
+            return Request.CreateResponse($"網頁內容總共為 {content.Length} 個字元。");
+        }
+
+        // /api/DownloadPageOK
+        //
+        [HttpGet]
+        public async Task<HttpResponseMessage> DownloadPageOK()
         {
             var task = MyDownloadPageAsync("https://www.huanlintalk.com");
             var content = await task;
@@ -21,6 +32,7 @@ namespace Ex06_AspNetAppDeadlock.Controllers
         private async Task<string> MyDownloadPageAsync(string url)
         {
             string content = await _httpClient.GetStringAsync(url); // deadlock!
+            // string content = await _httpClient.GetStringAsync(url).ConfigureAwait(false); // OK
             return content;
 
             // return System.Threading.Thread.CurrentThread.ManagedThreadId.ToString();
