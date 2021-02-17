@@ -12,7 +12,7 @@
 6. T4: 已經取得 DownloadStringTaskAsync() 的結果。
 7. T4: 已經取得 MyDownloadPageAsync() 的結果。
 
-Step 4 使用 Task.Run() 就會出現以下情境
+Step 4 使用 Task.Run() 就會出現以下情境，使用 Task.Run 會出現不同的 Thread ID，推斷 Task.Run() 的執行時間較短所導致，所以單純只需要回傳值，儘量使用 Task.FromResult()。
 
 - 4- T3: 使用 Task.Run() 模擬 await 期間的 Thread ID  
 - 4- T4: 使用 Task.Run() 模擬 await 期間的 Thread ID

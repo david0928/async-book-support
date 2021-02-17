@@ -6,11 +6,13 @@ namespace Ex06_AspNetAppDeadlock.Controllers
 {
     public class DemoDeadlockController : ApiController
     {
+        // 
+        // /api/DemoDeadlock/DownloadPage
         [HttpGet]
-        public HttpResponseMessage DownloadPage()
+        public async Task <HttpResponseMessage> DownloadPage()
         {
             var task = MyDownloadPageAsync("https://www.huanlintalk.com");
-            var content = task.Result;
+            var content = await task;
             return Request.CreateResponse($"網頁內容總共為 {content.Length} 個字元。");
         }
 
@@ -25,6 +27,9 @@ namespace Ex06_AspNetAppDeadlock.Controllers
         }
 
         // 解法一：使用 Task.ConfigureAwait(false)。此解法有副作用，不是頂好的解法。
+        // string content = await _httpClient.GetStringAsync(url).ConfigureAwait(false);
+
         // 解法二：從頭到尾都使用 async 方法。這是正解。
+        // public async Task <HttpResponseMessage> DownloadPage()
     }
 }
