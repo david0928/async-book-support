@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Ex04_SharedState
+namespace Ex04_SharedState_Lock
 {
     internal static class Program
     {

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex02_ParamThreadStart", "Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex03_01_ThreadJoin", "Ex03_ThreadJoin\Ex03_01_ThreadJoin.csproj", "{48A8FEAE-C58A-4D78-A7E6-D0EC9470AA6B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex04_SharedState", "Ex04_SharedState\Ex04_SharedState.csproj", "{8D6D6C25-DD84-4C4E-B731-65ACD8FE8B02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex04_SharedState_Lock", "Ex04_SharedState\Ex04_SharedState_Lock.csproj", "{8D6D6C25-DD84-4C4E-B731-65ACD8FE8B02}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex05_Lock", "Ex05_Lock\Ex05_Lock.csproj", "{7CE9E353-C54C-4053-8EFD-7CCD681FB8DA}"
 EndProject
@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex10_TaskRun", "Ex10_TaskRu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex03_02_ThreadJoinTimeout", "Ex03_02_ThreadJoinTimeout\Ex03_02_ThreadJoinTimeout.csproj", "{0DABBBCC-C88A-4D8C-9790-12C87E8DA743}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10_TaskRun_DelayVsSleep", "Ex10_TaskRun_DelayVsSleep\Ex10_TaskRun_DelayVsSleep.csproj", "{CF5E9264-A222-4138-895D-7FE0151B9546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex10_TaskRun_DelayVsSleep", "Ex10_TaskRun_DelayVsSleep\Ex10_TaskRun_DelayVsSleep.csproj", "{CF5E9264-A222-4138-895D-7FE0151B9546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex04_SharedState_MemoryCache", "Ex04_SharedState_MemoryCache\Ex04_SharedState_MemoryCache.csproj", "{E6854E72-96F2-459E-B2C8-4E514CF8B9A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{CF5E9264-A222-4138-895D-7FE0151B9546}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF5E9264-A222-4138-895D-7FE0151B9546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF5E9264-A222-4138-895D-7FE0151B9546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6854E72-96F2-459E-B2C8-4E514CF8B9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6854E72-96F2-459E-B2C8-4E514CF8B9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6854E72-96F2-459E-B2C8-4E514CF8B9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6854E72-96F2-459E-B2C8-4E514CF8B9A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
